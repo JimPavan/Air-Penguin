@@ -1,0 +1,112 @@
+﻿Build started 9/9/2021 6:16:40 PM.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\AirPenguin.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\AirPenguin.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /I"C:\Users\Jim\Documents\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\AirPenguin.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /I"C:\Users\Jim\Documents\SFML-2.5.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\AirPenguin.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Background.cpp Camera.cpp CameraFollower.cpp Constants.cpp DynamicText.cpp GUI.cpp GameState.cpp Gauge.cpp Health.cpp MenuState.cpp Player.cpp Score.cpp State.cpp Terrain.cpp Utils.cpp main.cpp
+         Background.cpp
+         Camera.cpp
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Camera.cpp(3,25): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Camera.cpp(3,47): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+         CameraFollower.cpp
+         Constants.cpp
+         DynamicText.cpp
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(12,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(12,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(36,48): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+         GUI.cpp
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(10,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(18,27): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(23,29): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+         GameState.cpp
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(5,23): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(5,9): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(8,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+         Gauge.cpp
+         Health.cpp
+         MenuState.cpp
+         Player.cpp
+         Score.cpp
+         State.cpp
+         Terrain.cpp
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(97,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(98,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(195,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+                 with
+                 [
+                     T=float
+                 ]
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(200,80): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+                 with
+                 [
+                     T=float
+                 ]
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(245,20): warning C4018: '<=': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(284,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(300,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(315,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(318,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+                 with
+                 [
+                     T=float
+                 ]
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(335,20): warning C4018: '<': signed/unsigned mismatch
+         Utils.cpp
+         main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\Debug\AirPenguin.exe" /INCREMENTAL /ILK:"Debug\AirPenguin.ilk" /NOLOGO /LIBPATH:"C:\Users\Jim\Documents\SFML-2.5.1\lib" "sfml-system-d.lib" "sfml-graphics-d.lib" "sfml-audio-d.lib" "sfml-window-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\Debug\AirPenguin.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\Debug\AirPenguin.lib" /MACHINE:X86 Debug\Background.obj
+         Debug\Camera.obj
+         Debug\CameraFollower.obj
+         Debug\Constants.obj
+         Debug\DynamicText.obj
+         Debug\GameState.obj
+         Debug\Gauge.obj
+         Debug\GUI.obj
+         Debug\Health.obj
+         Debug\main.obj
+         Debug\MenuState.obj
+         Debug\Player.obj
+         Debug\Score.obj
+         Debug\State.obj
+         Debug\stdafx.obj
+         Debug\Terrain.obj
+         Debug\Utils.obj
+         AirPenguin.vcxproj -> C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\Debug\AirPenguin.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\AirPenguin.tlog\unsuccessfulbuild".
+         Touching "Debug\AirPenguin.tlog\AirPenguin.lastbuildstate".
+     1>Done Building Project "C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\AirPenguin.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+       "C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\AirPenguin.vcxproj" (Build target) (1) ->
+       (ClCompile target) -> 
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Camera.cpp(3,25): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Camera.cpp(3,47): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(12,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(12,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\DynamicText.cpp(36,48): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(10,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(18,27): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GUI.cpp(23,29): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(5,23): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(5,9): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\GameState.cpp(8,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(97,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(98,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(195,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(200,80): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(245,20): warning C4018: '<=': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(284,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(300,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(315,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(318,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(335,20): warning C4018: '<': signed/unsigned mismatch
+
+    21 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.20

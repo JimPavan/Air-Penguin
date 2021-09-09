@@ -1,0 +1,136 @@
+/*Terrain.cpp
+	Update function
+	Test to put the player back on the track
+	
+else if (sprite.getPosition().y + height / 2 + player.AMOUNT_SLIDE_TOUCH > y && getCurveAdvencement(player) > 0.10f && getCurveAdvencement(player) < 0.90f)
+{
+	player.setPosition(sf::Vector2f(sprite.getPosition().x, y - height / 2));
+	player.stopFalling();
+}
+*/
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+/*float Terrain::getSlopeAngle(Player& player)
+{
+	sf::Sprite sprite = player.getSprite();
+
+	//Player center x position
+	float x = sprite.getPosition().x + sprite.getGlobalBounds().width / 2;
+	//Find index platform below the player
+	int i = findSlopeIndex(player);
+	//Get positions of point a and point b of the segment
+	sf::Vector2f a = vertices[i].position;
+	sf::Vector2f b = vertices[i + 1].position;
+	//Get adjacent side length, opposite side length and hypothenus length
+	float adj = b.x - a.x;
+	float opp = a.y - b.y;
+	float hyp = sqrt(adj * adj + opp * opp);
+	//Calculate angle by cosinus formula in degrees
+	float angle = (adj / hyp) * (180 / 3.14f);
+
+	return cos(angle);
+}*/
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+/*float Terrain::getSlopeAdvencement(Player& player)
+{
+	sf::Sprite sprite = player.getSprite();
+
+	//Player center x position
+	float x = sprite.getPosition().x + sprite.getGlobalBounds().width / 2;
+	//Find index platform below the player
+	int i = findSlopeIndex(player);
+	//Get positions of point a and point b of the segment
+	sf::Vector2f a = vertices[i].position;
+	sf::Vector2f b = vertices[i + 1].position;
+	//Get the percentage of the advencement of the player on the current segment
+	float t = (x - a.x) / (b.x - a.x);
+
+	return t;
+}*/
+
+/*int Terrain::findSlopeIndex(Player& player)
+{
+	sf::Sprite sprite = player.getSprite();
+
+	//Player center x position
+	float x = sprite.getPosition().x;
+
+	int i = 0;
+	while (vertices[i].position.x < x)
+	{
+		i += 1;
+	}
+	
+	return i - 1;
+}*/
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+/*float Terrain::getYSlope(Player& player)
+{
+	sf::Sprite sprite = player.getSprite();
+
+	//Player center x position
+	float x = sprite.getPosition().x + sprite.getGlobalBounds().width / 2;
+	//Find index platform below the player
+	int i = findSlopeIndex(player);
+	//Get positions of point a and point b of the segment
+	sf::Vector2f a = vertices[i].position;
+	sf::Vector2f b = vertices[i + 1].position;
+	//Get the percentage of the advencement of the player on the current segment
+	float t = (x - a.x) / (b.x - a.x);
+	//Get the y colliding value according to the advencement of the player on the segment
+	float y = lerp(a.y, b.y, t);
+
+	return y;
+}*/
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+std::vector<sf::Vector2f> Terrain::findCurvePlayerOn(Player& player)
+{
+	std::vector<sf::Vector2f> line;
+
+	sf::Sprite sprite = player.getSprite();
+
+	//Player center x position
+	float x = sprite.getPosition().x;
+
+	int i = 0;
+	while (i < curves.size())
+	{
+		if (curves[i].x >= x)
+		{
+			line.push_back(curves[i - 1]);
+			line.push_back(curves[i]);
+			break;
+		}
+
+		i++;
+	}
+
+	//int index = findCurveIndex(player);
+
+	//line.push_back(curves[index-2]);
+	//line.push_back(curves[index]);
+
+	return line;
+}
