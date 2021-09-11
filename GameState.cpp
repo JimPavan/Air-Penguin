@@ -37,7 +37,7 @@ void GameState::reset()
 
 void GameState::checkKeyboard()
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) || sf::Touch::isDown(0))
 		player.setAccelerating(true);
 	else
 		player.setAccelerating(false);

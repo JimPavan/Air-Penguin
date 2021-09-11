@@ -1,4 +1,4 @@
-﻿Build started 9/9/2021 6:16:40 PM.
+﻿Build started 9/11/2021 5:47:35 PM.
 Logging verbosity is set to: Normal.     1>Project "C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\AirPenguin.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AirPenguin.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -43,16 +43,16 @@ Logging verbosity is set to: Normal.     1>Project "C:\Users\Jim\Documents\Proje
                  [
                      T=float
                  ]
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(245,20): warning C4018: '<=': signed/unsigned mismatch
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(284,20): warning C4018: '<': signed/unsigned mismatch
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(300,20): warning C4018: '<': signed/unsigned mismatch
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(315,20): warning C4018: '<': signed/unsigned mismatch
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(318,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(238,20): warning C4018: '<=': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(277,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(293,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(308,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(311,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
                  with
                  [
                      T=float
                  ]
-     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(335,20): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(328,20): warning C4018: '<': signed/unsigned mismatch
          Utils.cpp
          main.cpp
          Generating Code...
@@ -99,14 +99,14 @@ Build succeeded.
          C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(98,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
          C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(195,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
          C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(200,80): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(245,20): warning C4018: '<=': signed/unsigned mismatch
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(284,20): warning C4018: '<': signed/unsigned mismatch
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(300,20): warning C4018: '<': signed/unsigned mismatch
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(315,20): warning C4018: '<': signed/unsigned mismatch
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(318,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
-         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(335,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(238,20): warning C4018: '<=': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(277,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(293,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(308,20): warning C4018: '<': signed/unsigned mismatch
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(311,56): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+         C:\Users\Jim\Documents\Projects\Games\AirPenguinSolution\AirPenguin\Terrain.cpp(328,20): warning C4018: '<': signed/unsigned mismatch
 
     21 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.20
+Time Elapsed 00:00:03.49

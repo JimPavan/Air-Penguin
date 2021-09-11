@@ -7,7 +7,6 @@ Background::Background()
 
 	sprite = sf::Sprite(texture);
 	sprite.setPosition(sf::Vector2f(0, 0));
-	sprite.setScale(sf::Vector2f(0.6f, 0.6f));
 }
 
 void Background::update(float deltatime)

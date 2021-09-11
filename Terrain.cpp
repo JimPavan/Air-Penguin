@@ -154,8 +154,8 @@ void Terrain::initTerrain()
 
 	curveIndex = 0;
 
-	bottomCurve = sf::Color(200, 200, 200);
-	topCurve = sf::Color(50, 50, 50);
+	bottomCurve = sf::Color(170, 200, 190);
+	topCurve = sf::Color(200, 235, 240);
 
 	for (int i = 0; i < CHUNCK_SIZE; i++)
 		addChunck();
@@ -206,29 +206,22 @@ void Terrain::addChunck()
 
 void Terrain::updateTerrain(float x)
 {
-	/*static bool t = true;
-
 	int index = findLineIndex(x);
 
-	if (index == 9 && t)
+	if (index == CHUNCK_DELETE_INDEX + 1) // Must be % 3 + 1
 	{
-		
-		t = false;
-		lines.erase(lines.begin(), lines.begin() + 4);
+		//Delete old chunks and empty list of curves (lines)
+		lines.erase(lines.begin(), lines.begin() + CHUNCK_DELETE_INDEX); //Must be % 3
 		curves.clear();
 		prepareDrawingLines();
+
+		//Put curve index to match start list collision detection
+		curveIndex = 0;
+
+		//Add new chuncks
+		for (int i = 0; i < CHUNCK_DELETE_INDEX / 2; i++) //Must be %3 / 2
+			addChunck();
 	}
-
-	std::cout << index << std::endl;*/
-	//std::cout << curves.size() << std::endl;
-	/*if (index == 2)
-	{
-		addChunck();
-
-		lines.erase(lines.begin(), lines.begin() + 2);
-		curves.clear();
-		prepareDrawingLines();
-	}*/
 }
 
 Terrain::Terrain()

@@ -11,8 +11,11 @@ private:
 	const static int V_HEIGHT = 140;
 	const static int Y_BASE_POS = 450;
 	const static int HEIGHT_MODULATION = 100;
-	const static int CHUNCK_SIZE = 64;
 	const float CURVE_PRECISION = 0.01f;
+	//Must be %3 and > 3, be careful if too big slows down the game
+	const static int CHUNCK_SIZE = 9;
+	//Must be < CHUNCK_SIZE and % 3
+	const static int CHUNCK_DELETE_INDEX = 6;
 
 	int curveIndex;
 

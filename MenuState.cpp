@@ -7,7 +7,7 @@ MenuState::MenuState()
 
 void MenuState::checkTap()
 {
-	click = (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) ? true : false;
+	click = (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left) || sf::Touch::isDown(0)) ? true : false;
 }
 
 void MenuState::update(float deltatime)
